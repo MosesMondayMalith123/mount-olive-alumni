@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class of 2016 - Mount Olive Alumni</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #4c1d95);
+  color: white;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+}
+
+nav h2 {
+  color: #facc15;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #facc15;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 45px;
+}
+
+.hero p {
+  color: #cbd5e1;
+}
+
+/* SECTION */
+.section {
+  background: rgba(255,255,255,0.08);
+  margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  line-height: 1.8;
+  animation: fadeIn 1s ease;
+}
+
+.section ul {
+  columns: 2;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #facc15;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 13px;
+  padding: 0 10px 15px;
+  color: #e2e8f0;
+}
+
+/* TEACHER BOX (NO IMAGE) */
+.teacher-box {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: black;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Mount Olive Alumni</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="2015.html">2015</a></li>
+    <li><a href="2016.html">2016</a></li>
+    <li><a href="2017.html">2017</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Class of 2017</h1>
+  <p>Excellence • Discipline • Leadership • National Exams • Unforgettable Memories</p>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2>About the Class of 2017</h2>
+
+  <p>
+    The Class of 2017 at Mount Olive Good Shepherd Primary School was one of the most historic and unforgettable classes in the school’s history.
+    This was the year candidates officially used the UNEB examination center number, marking a major academic milestone.
+  </p>
+
+  <p>
+    The year was filled with intense academic competition, discipline, teamwork, and strong friendship bonds.
+    Students actively participated in exams, sports, Music Dance and Drama (MDD), debates, and class activities.
+  </p>
+
+  <p>
+    A unique feature of this class was the Manila board leadership system inside the classroom.
+    Moses led Mathematics while Opiyo led Science, both performing at the top from January to November.
+  </p>
+
+  <p>
+    It also marked the emotional farewell of great teachers:
+    Tr. Paul, Tr. Anthony, Tr. Charles, and Tr. Robert.
+  </p>
+</div>
+
+<!-- STUDENTS -->
+<div class="section">
+  <h2>Students of 2017</h2>
+  <ul>
+    <li>Moses</li><li>Opiyo</li><li>Mariak</li><li>Akuok</li><li>Aber</li>
+    <li>Atto</li><li>Lamunu</li><li>Ayidi</li><li>Albert</li><li>Otema</li>
+    <li>Yaki</li><li>Gabriel</li><li>Joan</li><li>Jennifer</li>
+    <li>Nakayenze</li><li>Akello</li><li>Hayati</li>
+    <li>Arek</li><li>Hanna</li><li>Malong</li>
+  </ul>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+  <h2>Student Gallery</h2>
+</div>
+
+<div class="grid">
+
+  <div class="card"><img src="images/Moses.jpeg"><h3>Moses</h3><p>Mathematics leader and top performer.</p></div>
+  <div class="card"><img src="images/Geofrey.jpeg"><h3>Opiyo</h3><p>Science leader and consistent achiever.</p></div>
+  <div class="card"><img src="images/Xcdoz.jpeg"><h3>Mariak</h3><p>Hardworking and active learner.</p></div>
+  <div class="card"><img src="images/Akuok.jpeg"><h3>Akuok</h3><p>Focused and disciplined student.</p></div>
+  <div class="card"><img src="images/Aber.jpeg"><h3>Aber</h3><p>Strong academic performer.</p></div>
+  <div class="card"><img src="images/Atto.jpeg"><h3>Atto</h3><p>Active in school activities.</p></div>
+  <div class="card"><img src="images/Lamunu.jpeg"><h3>Lamunu</h3><p>Creative and intelligent.</p></div>
+  <div class="card"><img src="images/Anyidi.jpeg"><h3>Ayidi</h3><p>Consistent academic achiever.</p></div>
+  <div class="card"><img src="images/Albert.jpeg"><h3>Albert</h3><p>Respectful and disciplined.</p></div>
+  <div class="card"><img src="images/Jeffer.jpeg"><h3>Otema</h3><p>Active learner.</p></div>
+  <div class="card"><img src="images/Yaki.jpeg"><h3>Yaki</h3><p>Focused and determined.</p></div>
+  <div class="card"><img src="images/Gabriel.jpeg"><h3>Gabriel</h3><p>Strong teamwork.</p></div>
+  <div class="card"><img src="images/Joan.jpeg"><h3>Joan</h3><p>Bright and confident.</p></div>
+  <div class="card"><img src="images/Jennifer.jpeg"><h3>Jennifer</h3><p>Hardworking student.</p></div>
+  <div class="card"><img src="images/Nakayenze.jpeg"><h3>Nakayenze</h3><p>Disciplined learner.</p></div>
+  <div class="card"><img src="images/Akello.jpeg"><h3>Akello</h3><p>Strong academic performance.</p></div>
+  <div class="card"><img src="images/Hayati.jpeg"><h3>Hayati</h3><p>Focused and dedicated.</p></div>
+  <div class="card"><img src="images/Arek.jpeg"><h3>Arek</h3><p>Hardworking and active.</p></div>
+  <div class="card"><img src="images/Hanna.jpeg"><h3>Hanna</h3><p>Positive attitude.</p></div>
+  <div class="card"><img src="images/Malong.jpeg"><h3>Malong</h3><p>Participated actively.</p></div>
+
+</div>
+
+<!-- TEACHERS -->
+<div class="section">
+  <h2>Our Teachers</h2>
+  <p>
+    These teachers played a major role in shaping discipline, academic success, and leadership.
+  </p>
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="teacher-box">P</div>
+    <h3>Tr. Paul</h3>
+    <p>Mathematics & Discipline</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">A</div>
+    <h3>Tr. Anthony</h3>
+    <p>English Language</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">C</div>
+    <h3>Tr. Charles</h3>
+    <p>Science</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">R</div>
+    <h3>Tr. Robert</h3>
+    <p>Leadership & Social Studies</p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+  © 2026 Mount Olive Alumni <br>
+  <b style="color:#facc15;">Designed & Powered by Moses Monday MALITH</b>
+</footer>
+
+</body>
+</html>

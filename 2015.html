@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class of 2015 - Mount Olive Alumni</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f172a, #1e3a8a, #4c1d95);
+  color: white;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.4);
+  padding: 15px 20px;
+  backdrop-filter: blur(10px);
+}
+
+nav h2 {
+  margin: 0;
+  color: #facc15;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #facc15;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  animation: fadeDown 1s ease-in-out;
+}
+
+.hero p {
+  color: #cbd5e1;
+}
+
+/* SECTIONS */
+.about, .names {
+  background: rgba(255,255,255,0.1);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  line-height: 1.7;
+}
+
+/* LIST */
+.names ul {
+  columns: 2;
+}
+
+/* STUDENT GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.4s;
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #facc15;
+}
+
+.card p {
+  font-size: 13px;
+  padding: 0 10px 15px;
+  color: #e2e8f0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 20px;
+}
+
+/* ANIMATION */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Mount Olive Alumni</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="2015.html">2015</a></li>
+    <li><a href="2016.html">2016</a></li>
+    <li><a href="2017.html">2017</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Class of 2015</h1>
+  <p>A Year of Excellence, Discipline & Great Memories</p>
+</div>
+
+<!-- INTRODUCTION -->
+<div class="about">
+  <h2>About the Class of 2015</h2>
+
+  <p>
+    The Class of 2015 at Mount Olive Good Shepherd Primary School in Gulu, Uganda,
+    is remembered for discipline, unity, and academic excellence. The students built
+    strong foundations that shaped their future success.
+  </p>
+
+  <p>
+    They participated in class tests, mid-term exams, and final examinations, along
+    with sports, Music Dance and Drama (MDD), group discussions, and school duties.
+  </p>
+
+  <p>
+    Many members of this class are now pursuing education and careers in different
+    parts of the world.
+  </p>
+</div>
+
+<!-- STUDENT LIST -->
+<div class="names">
+  <h2>Student List</h2>
+  <ul>
+    <li>Twinamasiko Lyndo</li>
+    <li>Kur Marial</li>
+    <li>Mariak Wel</li>
+    <li>Mariak Deng</li>
+    <li>Mercy</li>
+    <li>Awanga Joan</li>
+    <li>Watmond</li>
+    <li>Agot Maketh</li>
+      <li>Akello Angel</li>
+  </ul>
+</div>
+
+<!-- STUDENT CARDS -->
+<div class="grid">
+
+  <div class="card">
+    <img src="./images/Lyndo.jpeg">
+    <h3>Twinamasiko Lyndo</h3>
+    <p>Outstanding leader and top academic performer.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/Kur.jpeg">
+    <h3>Kur Marial</h3>
+    <p>Focused and consistent learner.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/Wek.jpeg">
+    <h3>Mariak Wek</h3>
+    <p>Creative and active in class participation.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/Deng.jpeg">
+    <h3>Mariak Deng</h3>
+    <p>Strong academic performer.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/Mercy.jpeg">
+    <h3>Mercy</h3>
+    <p>Bright and confident student.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/Awanga.jpeg">
+    <h3>Awanga Joan</h3>
+    <p>Disciplined and respectful learner.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/Watmond.jpeg">
+    <h3>Watmond</h3>
+    <p>Friendly and positive attitude.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/Agot.jpeg">
+    <h3>Agot Maketh</h3>
+    <p>Hardworking and determined student.</p>
+  </div>
+
+</div>
+<div class="section">
+  <h2>Our Teachers</h2>
+  <p>
+    These teachers played a major role in shaping discipline, academic success, and leadership.
+  </p>
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="teacher-box">P</div>
+    <h3>Tr. Paul</h3>
+    <p>Mathematics & Discipline</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">A</div>
+    <h3>Tr. Anthony</h3>
+    <p>English Language</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">C</div>
+    <h3>Tr. Charles</h3>
+    <p>Science</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">R</div>
+    <h3>Tr. Robert</h3>
+    <p>Leadership & Social Studies</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Mount Olive Alumni <br>
+  <b style="color:#facc15;">Designed & Powered by Moses Monday MALITH</b>
+</footer>
+
+</body>
+</html>

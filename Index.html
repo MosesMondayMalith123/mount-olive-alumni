@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mount Olive Alumni</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #4c1d95);
+  color: white;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #facc15;
+}
+
+.logo h3 {
+  color: #facc15;
+}
+
+/* NAV LINKS */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #facc15;
+  color: black;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  animation: fadeIn 1.2s ease;
+}
+
+.hero h1 {
+  font-size: 45px;
+  background: linear-gradient(to right, #facc15, #22c55e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  color: #cbd5e1;
+}
+
+/* SEARCH */
+input {
+  padding: 12px;
+  width: 60%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 15px #facc15;
+}
+
+/* SLIDESHOW */
+.slideshow {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.slideshow img {
+  width: 80%;
+  max-width: 800px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  animation: fade 1s;
+}
+
+/* SECTION */
+.section {
+  background: rgba(255,255,255,0.08);
+  margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  line-height: 1.7;
+  transition: 0.3s;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+/* YEARS */
+.years {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.year {
+  background: rgba(255,255,255,0.15);
+  padding: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.year:hover {
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: black;
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* ANIMATIONS */
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  .slideshow img {
+    height: 220px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">
+    <img src="images/logo.jpg">
+    <h3>Mount Olive Alumni</h3>
+  </div>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="2015.html">2015</a></li>
+    <li><a href="2016.html">2016</a></li>
+    <li><a href="2017.html">2017</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Mount Olive Good Shepherd</h1>
+  <p>Memories • Excellence • Legacy</p>
+
+  <input type="text" placeholder="Search school memories...">
+</div>
+
+<!-- SLIDESHOW -->
+<div class="slideshow">
+  <img id="slide" src="images/school1.jpeg">
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Our School</h2>
+  <p>
+    Mount Olive Good Shepherd Primary School in Gulu, Uganda has shaped disciplined,
+    successful and respected students across generations. The school is known for strong
+    academic performance, leadership development, and unity among students.
+  </p>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+  <h2>School Gallery</h2>
+  <div class="gallery">
+    <img src="images/school1.jpeg">
+    <img src="images/school2.jpeg">
+    <img src="images/school3.jpeg">
+    <img src="images/school4.jpeg">
+    <img src="images/school5.jpeg">
+    <img src="images/school6.jpeg">
+  </div>
+</div>
+
+<!-- YEARS -->
+<div class="section">
+  <h2>Explore Alumni Years</h2>
+  <div class="years">
+    <div class="year" onclick="go('2015.html')">Class of 2015</div>
+    <div class="year" onclick="go('2016.html')">Class of 2016</div>
+    <div class="year" onclick="go('2017.html')">Class of 2017</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Mount Olive Alumni <br>
+  <b style="color:#facc15;">Designed & Powered by Moses Monday MALITH</b>
+</footer>
+
+<script>
+function go(page){
+  window.location.href = page;
+}
+
+const images = [
+  "images/school1.jpeg",
+  "images/school2.jpeg",
+  "images/school3.jpeg",
+  "images/school4.jpeg",
+  "images/school5.jpeg",
+  "images/school6.jpeg"
+];
+
+let i = 0;
+setInterval(()=>{
+  i = (i + 1) % images.length;
+  document.getElementById("slide").src = images[i];
+}, 3000);
+</script>
+
+</body>
+</html>
