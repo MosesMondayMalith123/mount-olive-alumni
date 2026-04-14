@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,8 +88,14 @@ nav ul li a:hover {
   color: transparent;
 }
 
-.hero p {
-  color: #cbd5e1;
+/* FLOATING TEXT */
+.glow {
+  animation: floatText 3s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 /* SEARCH */
@@ -106,6 +113,26 @@ input:focus {
   box-shadow: 0 0 15px #facc15;
 }
 
+/* SCROLLING TEXT */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 12s linear infinite;
+  color: #facc15;
+  font-weight: bold;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
 /* SLIDESHOW */
 .slideshow {
   display: flex;
@@ -120,7 +147,6 @@ input:focus {
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  animation: fade 1s;
 }
 
 /* SECTION */
@@ -180,6 +206,18 @@ input:focus {
   transform: scale(1.1);
 }
 
+/* BLINK TEXT */
+.blink {
+  animation: blink 1s infinite;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+
 /* FOOTER */
 footer {
   text-align: center;
@@ -190,11 +228,6 @@ footer {
 }
 
 /* ANIMATIONS */
-@keyframes fade {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(20px);}
   to {opacity: 1; transform: translateY(0);}
@@ -242,10 +275,20 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Mount Olive Good Shepherd</h1>
-  <p>Memories • Excellence • Legacy</p>
+  <h1 class="glow">Mount Olive Good Shepherd</h1>
+  
+  <!-- TYPING TEXT -->
+  <p id="typing"></p>
 
   <input type="text" placeholder="Search school memories...">
+
+  <!-- SCROLLING TEXT -->
+  <div class="marquee">
+    <p>Welcome to Mount Olive Alumni • Stay Connected • Celebrate Memories • Class of 2015, 2016, 2017</p>
+  </div>
+
+  <!-- BLINK TEXT -->
+  <p class="blink">Alumni Registration Coming Soon!</p>
 </div>
 
 <!-- SLIDESHOW -->
@@ -258,8 +301,7 @@ footer {
   <h2>About Our School</h2>
   <p>
     Mount Olive Good Shepherd Primary School in Gulu, Uganda has shaped disciplined,
-    successful and respected students across generations. The school is known for strong
-    academic performance, leadership development, and unity among students.
+    successful and respected students across generations.
   </p>
 </div>
 
@@ -293,10 +335,13 @@ footer {
 </footer>
 
 <script>
+
+// NAVIGATION
 function go(page){
   window.location.href = page;
 }
 
+// SLIDESHOW
 const images = [
   "images/school1.jpeg",
   "images/school2.jpeg",
@@ -311,7 +356,23 @@ setInterval(()=>{
   i = (i + 1) % images.length;
   document.getElementById("slide").src = images[i];
 }, 3000);
+
+// TYPING EFFECT
+const text = "Memories • Excellence • Legacy";
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 60);
+  }
+}
+
+typeEffect();
+
 </script>
 
 </body>
 </html>
+```
