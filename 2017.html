@@ -24,6 +24,7 @@ nav {
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 nav h2 {
@@ -76,7 +77,6 @@ nav ul li a:hover {
 
 .hero h1 {
   font-size: 40px;
-  animation: fadeDown 1s ease-in-out;
 }
 
 .hero p {
@@ -90,13 +90,7 @@ nav ul li a:hover {
   padding: 25px;
   border-radius: 15px;
   backdrop-filter: blur(10px);
-  line-height: 1.8;
-  animation: fadeIn 1s ease;
-}
-
-/* LIST */
-.section ul {
-  columns: 2;
+  line-height: 1.7;
 }
 
 /* GRID */
@@ -117,8 +111,7 @@ nav ul li a:hover {
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transform: translateY(-6px);
 }
 
 .card img {
@@ -138,34 +131,12 @@ nav ul li a:hover {
   color: #e2e8f0;
 }
 
-/* TEACHER BOX */
-.teacher-box {
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-  font-weight: bold;
-  background: linear-gradient(135deg, #facc15, #f97316);
-  color: black;
-}
-
 /* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
   background: rgba(0,0,0,0.5);
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
-}
-
-@keyframes fadeDown {
-  from {opacity: 0; transform: translateY(-20px);}
-  to {opacity: 1; transform: translateY(0);}
+  margin-top: 20px;
 }
 
 </style>
@@ -188,35 +159,21 @@ footer {
 
 <!-- MOVING TEXT -->
 <div class="marquee">
-  <span>🎓 Class of 2017 • Excellence • Discipline • Leadership • UNEB First Candidate Class • Unforgettable Memories 🎓</span>
+  <span>Class of 2017 • Excellence • Discipline • Leadership • UNEB First Candidate Class</span>
 </div>
 
 <!-- HERO -->
 <div class="hero">
   <h1>Class of 2017</h1>
-  <p>Excellence • Discipline • Leadership • National Exams • Unforgettable Memories</p>
+  <p>Excellence • Discipline • Leadership • Legacy</p>
 </div>
 
 <!-- ABOUT -->
 <div class="section">
   <h2>About the Class of 2017</h2>
-
   <p>
-    The Class of 2017 at Mount Olive Good Shepherd Primary School was one of the most historic classes.
-    It marked the year the school officially used the UNEB examination center number.
-  </p>
-
-  <p>
-    The class was known for strong competition, discipline, leadership, and teamwork in academics and activities.
-  </p>
-
-  <p>
-    A special leadership system was introduced where Moses led Mathematics and Opiyo led Science,
-    both performing consistently throughout the year.
-  </p>
-
-  <p>
-    This year also marked the farewell of beloved teachers: Tr. Paul, Tr. Anthony, Tr. Charles, and Tr. Robert.
+    The Class of 2017 was one of the strongest and most disciplined classes in the history of Mount Olive Good Shepherd.
+    It marked an important academic year with strong performance, leadership, and unity.
   </p>
 </div>
 
@@ -228,72 +185,162 @@ footer {
     <li>Atto Nighty</li><li>Lamunu Babara</li><li>Anyidi Emmanuel</li><li>Albert Aoli</li><li>Otema Jeffer</li>
     <li>Yaki David</li><li>Gabriel Yai</li><li>Joan</li><li>Jennifer Charles</li>
     <li>Nakayenze Winnie</li><li>Akello Sandra</li><li>Hayati Nyutayo</li>
-    <li>Arek Harriet</li><li>Hanna Sitty</li><li>Malong Khon</li><li>Pegene Moris</li>
-  </ul>
+    <li>Arek Harriet</li><li>Hanna Sitty</li><li>Malong Khon</li><li>Laker Brandy</li><li>Ojara Alex</li><li>Amito Brenda</li>
+    <li>Atimango Cindrella</li>
   </ul>
 </div>
 
-<!-- GALLERY -->
+<!-- STUDENT GALLERY -->
 <div class="section">
   <h2>Student Gallery</h2>
-</div>
 
-<div class="grid">
+  <div class="grid">
 
-  <div class="card"><img src="images/Moses.jpeg"><h3>Moses</h3><p>Moses is a former student currently pursuing a Bachelor of Science in Computer Science. He is hardworking, disciplined, and passionate about technology, with a strong goal of becoming a skilled professional in the field of computing.</p></div>
-  <div class="card"><img src="images/Geofrey.jpeg"><h3>Opiyo</h3><p>Science leader.</p></div>
-  <div class="card"><img src="images/Xcdoz.jpeg"><h3>Mariak</h3><p>Hardworking student.</p></div>
-  <div class="card"><img src="images/Akuok.jpeg"><h3>Akuok</h3><p>Focused learner.</p></div>
-  <div class="card"><img src="images/Aber.jpeg"><h3>Aber</h3><p>Strong academic performance.</p></div>
-  <div class="card"><img src="images/Atto.jpeg"><h3>Atto</h3><p>Active participant.</p></div>
-  <div class="card"><img src="images/Lamunu.jpeg"><h3>Lamunu</h3><p>Creative student.</p></div>
-  <div class="card"><img src="images/Anyidi.jpeg"><h3>Ayidi</h3><p>Consistent achiever.</p></div>
-  <div class="card"><img src="images/Albert.jpeg"><h3>Albert</h3><p>Disciplined learner.</p></div>
-  <div class="card"><img src="images/Jeffer.jpeg"><h3>Otema</h3><p>Active in class.</p></div>
-   <div class="card"><img src="images/pegene.jpeg"><h3>pegene</h3><p>Pegene is a former student currently pursuing Law. She is hardworking, disciplined, and passionate about justice, with a strong ambition to become a professional lawyer and make a positive impact in society..</p></div>
+    <div class="card">
+      <img src="images/moses.jpeg">
+      <h3>moses</h3>
+      <p>moses is pursuing BSc Computer Science. hardworking, disciplined, and passionate about technology.</p>
+    </div>
 
+    <div class="card">
+      <img src="images/opiyo.jpeg">
+      <h3>opiyo</h3>
+      <p>science leader with strong discipline and teamwork skills.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/mariak.jpeg">
+      <h3>mariak</h3>
+      <p>hardworking and focused student.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/akuok.jpeg">
+      <h3>akuok</h3>
+      <p>consistent and disciplined learner.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/aber.jpeg">
+      <h3>aber</h3>
+      <p>strong academic performer.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/atto.jpeg">
+      <h3>atto</h3>
+      <p>active and participative student.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/lamunu.jpeg">
+      <h3>lamunu</h3>
+      <p>creative and intelligent learner.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/anyidi.jpeg">
+      <h3>anyidi</h3>
+      <p>consistent academic achiever.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/albert.jpeg">
+      <h3>albert</h3>
+      <p>disciplined and focused student.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/otema.jpeg">
+      <h3>otema</h3>
+      <p>active in class discussions.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/yaki.jpeg">
+      <h3>yaki</h3>
+      <p>dedicated and hardworking learner.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/gabriel.jpeg">
+      <h3>gabriel</h3>
+      <p>studying computer engineering in Indonesia. passionate about innovation and technology.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/joan.jpeg">
+      <h3>joan</h3>
+      <p>A dedicated former student who is now a qualified nurse, serving with care and compassion.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/jennifer.jpeg">
+      <h3>jennifer</h3>
+      <p>confident and focused learner.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/nakayenze.jpeg">
+      <h3>nakayenze</h3>
+      <p>consistent academic performer.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/akello.jpeg">
+      <h3>akello</h3>
+      <p>A dedicated and hardworking student with a strong passion for academic excellence and personal growth.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/hayati.jpeg">
+      <h3>hayati</h3>
+      <p>focused and disciplined student.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/arek.jpeg">
+      <h3>arek</h3>
+      <p>strong academic participation.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/hanna.jpeg">
+      <h3>hanna</h3>
+      <p>consistent and focused learner.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/malong.jpeg">
+      <h3>malong</h3>
+      <p>A focused and innovative former student currently pursuing a career in Information Technology..</p>
+    </div>
+
+    <div class="card">
+      <img src="images/pegene.jpeg">
+      <h3>pegene</h3>
+      <p>studying law. disciplined, focused, and passionate about justice.</p>
+    </div>
+  <div class="card">
+      <img src="images/brandy.jpeg">
+      <h3>Laker Brandy</h3>
+      <p>A brilliant and articulate student who excelled in English and was known for her strong communication skills.</p>
+    </div>
+  </div>
 </div>
 
 <!-- TEACHERS -->
 <div class="section">
-  <h2>Our Teachers</h2>
-  <p>These teachers shaped discipline, leadership, and academic excellence.</p>
+  <h2>Teachers</h2>
+  <p>Tr. Paul • Tr. Anthony • Tr. Charles • Tr. Robert</p>
 </div>
 
-<div class="grid">
-
-  <div class="card">
-    <div class="teacher-box">P</div>
-    <h3>Tr. Paul</h3>
-    <p>Mathematics & Discipline</p>
-  </div>
-
-  <div class="card">
-    <div class="teacher-box">A</div>
-    <h3>Tr. Anthony</h3>
-    <p>English Language</p>
-  </div>
-
-  <div class="card">
-    <div class="teacher-box">C</div>
-    <h3>Tr. Charles</h3>
-    <p>Science</p>
-  </div>
-
-  <div class="card">
-    <div class="teacher-box">R</div>
-    <h3>Tr. Robert</h3>
-    <p>Leadership & Social Studies</p>
-  </div>
-
-</div>
-
-
-<!-- FOOTER (FULL RESTORED) -->
+<!-- FOOTER -->
 <footer>
   © 2026 Mount Olive Alumni Portal — All Rights Reserved <br>
   Developed with ❤️ by Moses Monday MALITH <br>
   Class Archives: 2013 • 2014 • 2015 • 2016 • 2017
 </footer>
+
 </body>
 </html>
