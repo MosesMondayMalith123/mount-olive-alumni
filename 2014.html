@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class of 2014 - Mount Olive Alumni</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #4c1d95);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav h2 {
+  margin: 0;
+  color: #facc15;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #facc15;
+}
+
+/* 🔥 MOVING TEXT (FIXED - NO DELAY) */
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ticker-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 12s linear infinite;
+}
+
+.ticker-track span {
+  display: inline-block;
+  margin: 0 50px;
+  color: #facc15;
+  font-weight: 600;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 45px;
+  background: linear-gradient(to right, #facc15, #22c55e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* SECTIONS */
+.section, .about, .names {
+  background: rgba(255,255,255,0.08);
+  margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  line-height: 1.7;
+}
+
+/* LIST */
+.names ul {
+  columns: 2;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.4s;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #facc15;
+}
+
+.card p {
+  font-size: 13px;
+  padding: 0 10px 15px;
+  color: #e2e8f0;
+}
+
+/* TEACHER BOX */
+.teacher-box {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Mount Olive Alumni</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="2013.html">2013</a></li>
+    <li><a href="2014.html" style="color:#facc15;">2014</a></li>
+    <li><a href="2015.html">2015</a></li>
+    <li><a href="2016.html">2016</a></li>
+    <li><a href="2017.html">2017</a></li>
+  </ul>
+</nav>
+
+<!-- MOVING TEXT (NOW BELOW NAV + NO DELAY) -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>🔥 Class of 2014 — Excellence • Unity • Discipline • Achievement</span>
+    <span>🏆 Academic Strength & Leadership Growth</span>
+    <span>📚 Memories That Last Forever</span>
+    <span>🌍 Proud Alumni Worldwide</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Class of 2014</h1>
+  <p>Excellence • Discipline • Friendship • Academic Growth</p>
+</div>
+
+<!-- ABOUT -->
+<div class="about">
+  <h2>About the Class of 2014</h2>
+  <p>
+    The Class of 2014 is remembered for strong discipline, unity, and outstanding academic performance.
+    They excelled in academics, sports, and co-curricular activities. Many are now successful in universities and careers worldwide.
+  </p>
+</div>
+
+<!-- STUDENTS -->
+<div class="names">
+  <h2>Student List</h2>
+  <ul>
+    <li>Odong Justine</li>
+    <li>Jameson Makuei Nhial</li>
+    <li>Oyaka Isaac</li>
+    <li>Wek Majok</li>
+    <li>Awanga Winnie</li>
+    <li>Lanyero Mercy Natalia</li>
+    <li>Mercy Francisca</li>
+  </ul>
+</div>
+
+<!-- STUDENT CARDS (FULL DETAILS RESTORED) -->
+<div class="grid">
+
+  <div class="card">
+    <img src="./images/jameson.jpg">
+    <h3>Jameson Makuei Nhial</h3>
+    <p>Top performer of the class with excellent academic results. Known for discipline, leadership, and consistency in all subjects.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/justine.jpg">
+    <h3>Odong Justine</h3>
+    <p>Very strong in Mathematics and analytical thinking. A focused student who always aimed for excellence.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/mercy1.jpg">
+    <h3>Lanyero Mercy Natalia</h3>
+    <p>Excellent in English and communication. Very confident and always active in class discussions and presentations.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/isaac.jpg">
+    <h3>Oyaka Isaac</h3>
+    <p>Creative and active learner with strong participation in class and group work activities.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/majok.jpg">
+    <h3>Wek Majok</h3>
+    <p>Hardworking and determined student with strong academic discipline and teamwork spirit.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/winnie.jpg">
+    <h3>Awanga Winnie</h3>
+    <p>Focused and disciplined learner who maintained strong performance throughout the year.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/mercy2.jpg">
+    <h3>Mercy Francisca</h3>
+    <p>Friendly, confident, and cooperative student who supported classmates in group learning.</p>
+  </div>
+
+</div>
+
+<!-- TEACHERS -->
+<div class="section">
+  <h2>Our Teachers</h2>
+  <p>Dedicated teachers who guided and shaped the Class of 2014.</p>
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="teacher-box">P</div>
+    <h3>Tr. Paul</h3>
+    <p>Mathematics & Discipline</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">A</div>
+    <h3>Tr. Anthony</h3>
+    <p>English Language</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">C</div>
+    <h3>Tr. Charles</h3>
+    <p>Science</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">R</div>
+    <h3>Tr. Robert</h3>
+    <p>Leadership & Social Studies</p>
+  </div>
+
+</div>
+
+<!-- FOOTER (FULL RESTORED) -->
+<footer>
+  © 2026 Mount Olive Alumni Portal — All Rights Reserved <br>
+  Developed with ❤️ by Moses Monday MALITH <br>
+  Class Archives: 2013 • 2014 • 2015 • 2016 • 2017
+</footer>
+
+</body>
+</html>

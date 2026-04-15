@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class of 2013 - Mount Olive Alumni</title>
+
+<style>
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f172a, #1e3a8a, #4c1d95);
+  color: white;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.45);
+  padding: 15px 20px;
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav h2 {
+  margin: 0;
+  color: #facc15;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #facc15;
+}
+
+/* MOVING TEXT */
+.ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  background: rgba(0,0,0,0.35);
+  padding: 12px 0;
+}
+
+.ticker-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+.ticker-track span {
+  display: inline-block;
+  margin: 0 50px;
+  color: #facc15;
+  font-weight: 600;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 45px;
+  background: linear-gradient(to right, #facc15, #22c55e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  color: #cbd5e1;
+}
+
+/* SECTION */
+.section {
+  background: rgba(255,255,255,0.08);
+  margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  line-height: 1.8;
+}
+
+/* LIST */
+.section ul {
+  columns: 2;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.4s;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #facc15;
+}
+
+.card p {
+  font-size: 13px;
+  padding: 0 10px 15px;
+  color: #e2e8f0;
+}
+
+/* TEACHER BOX */
+.teacher-box {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: black;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  margin-top: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Mount Olive Alumni</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="2013.html" style="color:#facc15;">2013</a></li>
+    <li><a href="2014.html">2014</a></li>
+    <li><a href="2015.html">2015</a></li>
+    <li><a href="2016.html">2016</a></li>
+    <li><a href="2017.html">2017</a></li>
+  </ul>
+</nav>
+
+<!-- MOVING TEXT -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>🎓 Class of 2013 - First Candidate Class</span>
+    <span>🏆 Foundation of Excellence & Discipline</span>
+    <span>📚 Academic Pioneers</span>
+    <span>🌍 Legacy Begins Here</span>
+    <span>🎓 Discipline • Unity • Excellence</span>
+    <span>🏆 History Makers</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Class of 2013</h1>
+  <p>The First Candidate Class • Foundation of Excellence, Discipline & Unity</p>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2>About the Class of 2013</h2>
+  <p>The Class of 2013 is the first-ever candidate class in Mount Olive history.</p>
+  <p>It marked the beginning of national examinations and academic excellence.</p>
+  <p>This class is remembered for discipline, unity, and strong performance.</p>
+</div>
+
+<!-- STUDENTS -->
+<div class="section">
+  <h2>Students of 2013</h2>
+  <ul>
+    <li>Akera Moses</li>
+    <li>Bol Thomas</li>
+    <li>Kur Deng James</li>
+    <li>Kakanyero Oscar Olit</li>
+    <li>Okwera Fredrick Michael</li>
+    <li>Honest Fidema</li>
+  </ul>
+</div>
+
+<!-- TOP CANDIDATES -->
+<div class="section">
+  <h2>Top Candidates of 2013</h2>
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <img src="./images/moses.jpg">
+    <h3>Akera Moses</h3>
+    <p>Top academic performer.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/thomas.jpg">
+    <h3>Bol Thomas</h3>
+    <p>Consistent and disciplined.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/dengjames.jpg">
+    <h3>Kur Deng James</h3>
+    <p>Hardworking learner.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/oscar.jpg">
+    <h3>Kakanyero Oscar Olit</h3>
+    <p>Strong leadership skills.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/fredrick.jpg">
+    <h3>Okwera Fredrick Michael</h3>
+    <p>Focused and intelligent.</p>
+  </div>
+
+  <div class="card">
+    <img src="./images/honest.jpeg">
+    <h3>Honest Fidema</h3>
+    <p>Now pursuing Law with ambition.</p>
+  </div>
+
+</div>
+
+<!-- TEACHERS SECTION (NEW ADDED) -->
+<div class="section">
+  <h2>Our Teachers</h2>
+  <p>Teachers who shaped discipline, excellence, and academic success.</p>
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="teacher-box">P</div>
+    <h3>Tr. Paul</h3>
+    <p>Mathematics & Discipline</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">A</div>
+    <h3>Tr. Anthony</h3>
+    <p>English Language</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">C</div>
+    <h3>Tr. Charles</h3>
+    <p>Science</p>
+  </div>
+
+  <div class="card">
+    <div class="teacher-box">R</div>
+    <h3>Tr. Robert</h3>
+    <p>Leadership & Social Studies</p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Mount Olive Alumni Portal — All Rights Reserved <br>
+  Developed with ❤️ by Moses Monday MALITH <br>
+  Class Archives: 2013 • 2014 • 2015 • 2016 • 2017
+</footer>
+
+</body>
+</html>
