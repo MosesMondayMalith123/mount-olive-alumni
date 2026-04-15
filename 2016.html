@@ -20,10 +20,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 25px;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.4);
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 nav h2 {
@@ -35,7 +36,6 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 15px;
-  padding: 0;
 }
 
 nav ul li a {
@@ -46,6 +46,27 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #facc15;
+}
+
+/* MOVING TEXT */
+.marquee {
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: moveText 12s linear infinite;
+  font-weight: 600;
+  color: #facc15;
+}
+
+@keyframes moveText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
 /* HERO */
@@ -87,6 +108,7 @@ nav ul li a:hover {
   overflow: hidden;
   text-align: center;
   transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
 .card:hover {
@@ -99,7 +121,7 @@ nav ul li a:hover {
   object-fit: cover;
 }
 
-/* ONLY NAMED CARDS TEXT */
+/* TEXT */
 .card h3 {
   color: #facc15;
   margin: 10px 0 5px;
@@ -118,6 +140,7 @@ footer {
   background: rgba(0,0,0,0.4);
   margin-top: 20px;
 }
+
 </style>
 </head>
 
@@ -128,11 +151,18 @@ footer {
   <h2>Mount Olive Alumni</h2>
   <ul>
     <li><a href="index.html">Home</a></li>
+    <li><a href="2013.html">2013</a></li>
+    <li><a href="2014.html">2014</a></li>
     <li><a href="2015.html">2015</a></li>
     <li><a href="2016.html">2016</a></li>
     <li><a href="2017.html">2017</a></li>
   </ul>
 </nav>
+
+<!-- MOVING TEXT -->
+<div class="marquee">
+  <span>🎓 Class of 2016 • Discipline • Excellence • Friendship • Academic Growth • Mount Olive Legacy 🎓</span>
+</div>
 
 <!-- HERO -->
 <div class="hero">
@@ -146,7 +176,7 @@ footer {
 
   <p>
     The Class of 2016 at Mount Olive Good Shepherd Primary School was a hardworking and disciplined group.
-    They participated in exams, sports, Music Dance and Drama (MDD), debates, and class activities.
+    They participated in academics, sports, Music Dance and Drama (MDD), debates, and school activities.
   </p>
 
   <p>
@@ -170,29 +200,19 @@ footer {
     <li>Lamaro Tracy</li>
     <li>Achok Monica</li>
     <li>Orombi Victor</li>
-    <li>Atimango sherifa</li>
+    <li>Sherifa Sekina</li>
     <li>Deris</li>
     <li>Watmond</li>
-    <li>Akello Immaculate</li>
-    <li>Alaroker Deris Tina Okeny</li>
-    <li>Niyabo Mary Nicholas</li>
-    <li>Gladys Mawa</li>
   </ul>
 </div>
 
-<!-- PHOTO GALLERY -->
+<!-- STUDENT CARDS -->
 <div class="grid">
 
-  <!-- NAMED STUDENTS -->
   <div class="card">
     <img src="images/akol.jpeg">
     <h3>Akol Joseph</h3>
     <p>Outstanding academic performer and disciplined student.</p>
-  </div>
-  <div class="card">
-    <img src="images/mawa.jpg">
-    <h3>Gladys Mawa</h3>
-    <p>A cheerful and approachable student who brought joy to those around her, now focused on building a bright and successful future.</p>
   </div>
 
   <div class="card">
@@ -212,29 +232,13 @@ footer {
     <h3>Alaroker</h3>
     <p>Disciplined student with strong teamwork skills.</p>
   </div>
-  <div class="card">
-    <img src="images/niyabo.jpeg">
-    <h3>Niyabo Mary Nicholas</h3>
-    <p>A dedicated and hardworking student who puts consistent effort into studies and strives for improvement.</p>
-  </div>
 
   <div class="card">
     <img src="images/agiik.jpeg">
     <h3>Agiik</h3>
     <p>Active participant in school activities and academics.</p>
   </div>
-    <div class="card">
-    <img src="images/deris.jpeg">
-    <h3>Alaroker Deris Tina Okeny</h3>
-    <p>A hardworking student with a strong academic focus and a commitment to achieving good results in all subjects.</p>
-  </div>
-    <div class="card">
-    <img src="images/sheri.jpeg">
-    <h3>Atimango sherifa</h3>
-    <p>A respectful and well-mannered student who shows politeness toward teachers and classmates.</p>
-  </div>
 
-  <!-- GROUP MEMORIES (NO NAMES) -->
   <div class="card">
     <img src="images/group1.jpeg">
   </div>
@@ -257,45 +261,11 @@ footer {
 
 </div>
 
-<div class="section">
-  <h2>Our Teachers</h2>
-  <p>
-    These teachers played a major role in shaping discipline, academic success, and leadership.
-  </p>
-</div>
-
-<div class="grid">
-
-  <div class="card">
-    <div class="teacher-box">P</div>
-    <h3>Tr. Paul</h3>
-    <p>Mathematics & Discipline</p>
-  </div>
-
-  <div class="card">
-    <div class="teacher-box">A</div>
-    <h3>Tr. Anthony</h3>
-    <p>English Language</p>
-  </div>
-
-  <div class="card">
-    <div class="teacher-box">C</div>
-    <h3>Tr. Charles</h3>
-    <p>Science</p>
-  </div>
-
-  <div class="card">
-    <div class="teacher-box">R</div>
-    <h3>Tr. Robert</h3>
-    <p>Leadership & Social Studies</p>
-  </div>
-
-</div>
-
-
+<!-- FOOTER (FULL RESTORED) -->
 <footer>
-  © 2026 Mount Olive Alumni <br>
-  <b style="color:#facc15;">Designed & Powered by Moses Monday MALITH</b>
+  © 2026 Mount Olive Alumni Portal — All Rights Reserved <br>
+  Developed with ❤️ by Moses Monday MALITH <br>
+  Class Archives: 2013 • 2014 • 2015 • 2016 • 2017
 </footer>
 
 </body>
