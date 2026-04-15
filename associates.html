@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Associate Students - Mount Olive Alumni</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #4c1d95);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav h2 {
+  margin: 0;
+  color: #facc15;
+}
+
+/* RIGHT ALIGN FIX */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin-left: auto;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #facc15;
+}
+
+/* TICKER */
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+.ticker-track {
+  display: inline-block;
+  animation: scroll 12s linear infinite;
+}
+
+.ticker-track span {
+  margin: 0 50px;
+  color: #facc15;
+  font-weight: 600;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 45px;
+  background: linear-gradient(to right, #facc15, #22c55e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* SECTIONS */
+.section, .about, .names {
+  background: rgba(255,255,255,0.08);
+  margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* LIST */
+.names ul {
+  columns: 2;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ ONLY FIX (DO NOT CHANGE ANYTHING ELSE) */
+.card img {
+  width: 140px !important;
+  height: 140px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 15px auto 10px;
+  display: block;
+}
+
+.card h3 {
+  color: #facc15;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 13px;
+  padding: 0 10px 15px;
+  color: #e2e8f0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Mount Olive Alumni</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="2013.html">2013</a></li>
+    <li><a href="2014.html">2014</a></li>
+    <li><a href="2015.html">2015</a></li>
+    <li><a href="2016.html">2016</a></li>
+    <li><a href="2017.html">2017</a></li>
+    <li><a href="associates.html" style="color:#facc15;">Associates</a></li>
+  </ul>
+</nav>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>🌟 Associate Students — Unity • Connection • Growth</span>
+    <span>🤝 Still Part of Mount Olive Family</span>
+    <span>📚 Beyond the Classroom, Forever Connected</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Associate Students</h1>
+  <p>Connected • Valued • Part of the Legacy</p>
+</div>
+
+<!-- ABOUT -->
+<div class="about">
+  <h2>About Associate Students</h2>
+  <p>
+    Associate Students are individuals who studied at Mount Olive Good Shepherd but did not complete Primary Seven (P7).
+    They are still recognized as part of the alumni association and remain connected to the school’s community, values, and legacy.
+  </p>
+</div>
+
+<!-- LIST -->
+<div class="names">
+  <h2>Associate Members</h2>
+  <ul>
+    <li>Ogenrwot Joshua Oyoo</li>
+  </ul>
+</div>
+
+<!-- CARDS -->
+<div class="grid">
+
+ <div class="card">
+  <img src="images/joshua.jpeg">
+  <h3>Ogenrwot Joshua Oyoo</h3>
+  <p>An associate student of Mount Olive Good Shepherd, now pursuing Procurement at university. He remains dedicated to his academic journey and connected to the school’s legacy.</p>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Mount Olive Alumni Portal — All Rights Reserved <br>
+  Developed with ❤️ by Moses Monday MALITH <br>
+  Class Archives: 2013 • 2014 • 2015 • 2016 • 2017 • Associates
+</footer>
+
+</body>
+</html>
