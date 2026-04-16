@@ -70,7 +70,7 @@ nav ul li a:hover {
   color: black;
 }
 
-/* MOVING TEXT */
+/* MOVING TEXT (UNCHANGED) */
 .ticker {
   overflow: hidden;
   white-space: nowrap;
@@ -113,7 +113,7 @@ nav ul li a:hover {
   color: #cbd5e1;
 }
 
-/* SLIDESHOW (RESTORED) */
+/* SLIDESHOW */
 .slideshow {
   display: flex;
   justify-content: center;
@@ -154,10 +154,6 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-.gallery img:hover {
-  transform: scale(1.08);
-}
-
 /* YEARS */
 .years {
   display: flex;
@@ -192,7 +188,16 @@ nav ul li a:hover {
   text-align: center;
 }
 
-/* FOOTER (UNCHANGED) */
+/* TEACHER IMAGE */
+.teacher img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
@@ -205,7 +210,7 @@ footer {
 
 <body>
 
-<!-- NAV -->
+<!-- NAV (UNCHANGED) -->
 <nav>
   <div class="logo">
     <img src="images/logo.jpg">
@@ -223,14 +228,9 @@ footer {
   </ul>
 </nav>
 
-<!-- MOVING TEXT -->
+<!-- MOVING TEXT (UNCHANGED) -->
 <div class="ticker">
   <div class="ticker-track">
-    <span>🎓 Welcome to Mount Olive Alumni Portal</span>
-    <span>📚 Excellence • Discipline • Legacy</span>
-    <span>🏆 Celebrating Classes of 2013 - 2017</span>
-    <span>🌍 Proud Alumni Across the World</span>
-
     <span>🎓 Welcome to Mount Olive Alumni Portal</span>
     <span>📚 Excellence • Discipline • Legacy</span>
     <span>🏆 Celebrating Classes of 2013 - 2017</span>
@@ -244,88 +244,59 @@ footer {
   <p>Memories • Excellence • Legacy</p>
 </div>
 
-<!-- SLIDESHOW (BACK AGAIN) -->
+<!-- SLIDESHOW (UPDATED) -->
 <div class="slideshow">
   <img id="slide" src="images/school1.jpeg">
 </div>
 
-<!-- ABOUT (ENHANCED) -->
-<div class="section">
-  <h2>About Our School</h2>
-  <p>
-    Mount Olive Good Shepherd Primary School is a center of excellence known for discipline,
-    strong academics, and producing leaders across different fields including law, business,
-    technology, and education.
-  </p>
-</div>
+<!-- ABOUT + MISSION & VISION ADDED -->
 <div class="section">
   <h2>About the Alumni Association</h2>
 
   <p>
-    The Mount Olive Alumni Association is a network that connects former students of Mount Olive Good Shepherd Primary School,
-    from different graduating classes including 2013 to 2017 and beyond.
+    The Mount Olive Alumni Association connects former students across all classes, building unity and support.
   </p>
 
+  <h3>Mission</h3>
   <p>
-    Its purpose is to keep former students connected, celebrate achievements, and support one another in education, careers,
-    and personal growth.
+    To unite all alumni into a strong network that promotes mentorship, friendship, and academic growth.
   </p>
 
+  <h3>Vision</h3>
   <p>
-    Through this platform, alumni can share memories, reconnect with classmates, follow updates from their former school,
-    and build strong lifelong relationships.
-  </p>
-
-  <p>
-    The association also promotes unity, mentorship, and encourages members to contribute positively to society and future generations.
-  </p>
-</div>
-<!-- MISSION -->
-<div class="section">
-  <h2>Mission & Vision</h2>
-  <p><b>Mission:</b></p>
-  <p>
-    Our mission is to connect and unite all former students of Mount Olive Good Shepherd Primary School,
-    building a strong alumni community that preserves memories, supports one another, and promotes growth
-    in education, careers, and life.
-  </p>
-
-  <p><b>Vision:</b></p>
-  <p>
-    Our vision is to create a lifelong network of successful and responsible alumni who inspire, mentor,
-    and positively impact their communities while upholding the values of Mount Olive Good Shepherd.
+    To create a lifelong global alumni family that preserves legacy and supports success.
   </p>
 </div>
 
-<!-- TEACHERS -->
+<!-- TEACHERS WITH IMAGES -->
 <div class="section">
   <h2>Teachers</h2>
   <div class="teachers">
 
     <div class="teacher">
+      <img src="images/teacher1.jpeg">
       <h3>Tr. Paul</h3>
-      <p>Mathematics & Discipline</p>
     </div>
 
     <div class="teacher">
+      <img src="images/teacher2.jpeg">
       <h3>Tr. Anthony</h3>
-      <p>English & Communication</p>
     </div>
 
     <div class="teacher">
+      <img src="images/teacher3.jpeg">
       <h3>Tr. Charles</h3>
-      <p>Science & Innovation</p>
     </div>
 
     <div class="teacher">
+      <img src="images/teacher4.jpeg">
       <h3>Tr. Robert</h3>
-      <p>Leadership & Social Studies</p>
     </div>
 
   </div>
 </div>
 
-<!-- GALLERY -->
+<!-- GALLERY (UPDATED WITH 7,8,9) -->
 <div class="section">
   <h2>School Gallery</h2>
   <div class="gallery">
@@ -335,10 +306,13 @@ footer {
     <img src="images/school4.jpeg">
     <img src="images/school5.jpeg">
     <img src="images/school6.jpeg">
+    <img src="images/school7.jpeg">
+    <img src="images/school8.jpeg">
+    <img src="images/school9.jpeg">
   </div>
 </div>
 
-<!-- YEARS -->
+<!-- YEARS (UNCHANGED) -->
 <div class="section">
   <h2>Explore Alumni Years</h2>
   <div class="years">
@@ -350,7 +324,7 @@ footer {
   </div>
 </div>
 
-<!-- FOOTER (UNCHANGED) -->
+<!-- FOOTER -->
 <footer>
   © 2026 Mount Olive Alumni Portal — All Rights Reserved <br>
   Developed with ❤️ by Moses Monday MALITH <br>
@@ -362,27 +336,23 @@ function go(page){
   window.location.href = page;
 }
 
-/* SLIDESHOW FIX */
+/* SLIDESHOW UPDATED */
 const images = [
   "images/school1.jpeg",
   "images/school2.jpeg",
   "images/school3.jpeg",
   "images/school4.jpeg",
   "images/school5.jpeg",
-  "images/school6.jpeg"
+  "images/school6.jpeg",
+  "images/school7.jpeg",
+  "images/school8.jpeg",
+  "images/school9.jpeg"
 ];
 
 let i = 0;
 setInterval(() => {
   i = (i + 1) % images.length;
-  const img = document.getElementById("slide");
-  img.style.opacity = 0;
-
-  setTimeout(() => {
-    img.src = images[i];
-    img.style.opacity = 1;
-  }, 300);
-
+  document.getElementById("slide").src = images[i];
 }, 3000);
 </script>
 
