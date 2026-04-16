@@ -6,12 +6,11 @@
   <meta name="description" content="Official Mount Olive Alumni website featuring students from 2013 to 2017 and beyond. Discover alumni profiles, achievements, and stay connected.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 /* GLOBAL */
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -46,11 +45,8 @@ nav {
   border: 2px solid #facc15;
 }
 
-.logo h3 {
-  color: #facc15;
-}
+.logo h3 { color: #facc15; }
 
-/* NAV LINKS */
 nav ul {
   display: flex;
   list-style: none;
@@ -70,7 +66,7 @@ nav ul li a:hover {
   color: black;
 }
 
-/* MOVING TEXT (UNCHANGED) */
+/* TICKER */
 .ticker {
   overflow: hidden;
   white-space: nowrap;
@@ -109,9 +105,7 @@ nav ul li a:hover {
   color: transparent;
 }
 
-.hero p {
-  color: #cbd5e1;
-}
+.hero p { color: #cbd5e1; }
 
 /* SLIDESHOW */
 .slideshow {
@@ -127,7 +121,6 @@ nav ul li a:hover {
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  transition: opacity 0.5s ease-in-out;
 }
 
 /* SECTION */
@@ -174,7 +167,7 @@ nav ul li a:hover {
   color: black;
 }
 
-/* TEACHERS */
+/* TEACHERS FIXED FOR FACES */
 .teachers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -183,16 +176,17 @@ nav ul li a:hover {
 
 .teacher {
   background: rgba(255,255,255,0.1);
-  padding: 20px;
+  padding: 15px;
   border-radius: 12px;
   text-align: center;
 }
 
-/* TEACHER IMAGE */
+/* FIX: FACE FOCUS */
 .teacher img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
+  object-position: top; /* 🔥 IMPORTANT FIX (shows face) */
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -228,7 +222,7 @@ footer {
   </ul>
 </nav>
 
-<!-- MOVING TEXT (UNCHANGED) -->
+<!-- TICKER -->
 <div class="ticker">
   <div class="ticker-track">
     <span>🎓 Welcome to Mount Olive Alumni Portal</span>
@@ -244,59 +238,63 @@ footer {
   <p>Memories • Excellence • Legacy</p>
 </div>
 
-<!-- SLIDESHOW (UPDATED) -->
+<!-- SLIDESHOW -->
 <div class="slideshow">
   <img id="slide" src="images/school1.jpeg">
 </div>
 
-<!-- ABOUT + MISSION & VISION ADDED -->
+<!-- ASSOCIATION -->
 <div class="section">
-  <h2>About the Alumni Association</h2>
-
-  <p>
-    The Mount Olive Alumni Association connects former students across all classes, building unity and support.
-  </p>
+  <h2>About Alumni Association</h2>
+  <p>We connect former students and build lifelong unity.</p>
 
   <h3>Mission</h3>
-  <p>
-    To unite all alumni into a strong network that promotes mentorship, friendship, and academic growth.
-  </p>
+  <p>To unite alumni and promote mentorship, growth, and collaboration.</p>
 
   <h3>Vision</h3>
-  <p>
-    To create a lifelong global alumni family that preserves legacy and supports success.
-  </p>
+  <p>To build a strong global alumni family that supports success and preserves legacy.</p>
 </div>
 
-<!-- TEACHERS WITH IMAGES -->
+<!-- TEACHERS FIXED + DESCRIPTIONS -->
 <div class="section">
-  <h2>Teachers</h2>
+  <h2>Teachers - The Generals</h2>
+
   <div class="teachers">
 
     <div class="teacher">
-      <img src="images/teacher1.jpeg">
+      <img src="images/owiny.jpeg">
       <h3>Tr. Paul</h3>
+      <p>Mathematics, Music, Dance & Drama (MDD). Known for strict discipline and excellence in shaping performance and confidence.</p>
     </div>
 
     <div class="teacher">
-      <img src="images/teacher2.jpeg">
+      <img src="images/anthony.jpeg">
       <h3>Tr. Anthony</h3>
+      <p>English Language teacher. Known for strong grammar foundation and communication skills training.</p>
     </div>
 
     <div class="teacher">
-      <img src="images/teacher3.jpeg">
+      <img src="images/anyama.jpeg">
       <h3>Tr. Charles</h3>
+      <p>Science teacher. Known for experiments, curiosity building, and making science fun and practical.</p>
     </div>
 
     <div class="teacher">
-      <img src="images/teacher4.jpeg">
+      <img src="images/robert.jpeg">
       <h3>Tr. Robert</h3>
+      <p>Social Studies teacher. Known for leadership training, history knowledge, and civic education.</p>
     </div>
 
   </div>
 </div>
 
-<!-- GALLERY (UPDATED WITH 7,8,9) -->
+<div class="section">
+  <p style="text-align:center; color:#facc15; font-weight:600;">
+    They were famously called <b>"The Generals"</b> because of their unity, discipline, and strong influence on students.
+  </p>
+</div>
+
+<!-- GALLERY -->
 <div class="section">
   <h2>School Gallery</h2>
   <div class="gallery">
@@ -312,31 +310,27 @@ footer {
   </div>
 </div>
 
-<!-- YEARS (UNCHANGED) -->
+<!-- YEARS -->
 <div class="section">
   <h2>Explore Alumni Years</h2>
   <div class="years">
-    <div class="year" onclick="go('2013.html')">Class of 2013</div>
-    <div class="year" onclick="go('2014.html')">Class of 2014</div>
-    <div class="year" onclick="go('2015.html')">Class of 2015</div>
-    <div class="year" onclick="go('2016.html')">Class of 2016</div>
-    <div class="year" onclick="go('2017.html')">Class of 2017</div>
+    <div onclick="go('2013.html')" class="year">Class of 2013</div>
+    <div onclick="go('2014.html')" class="year">Class of 2014</div>
+    <div onclick="go('2015.html')" class="year">Class of 2015</div>
+    <div onclick="go('2016.html')" class="year">Class of 2016</div>
+    <div onclick="go('2017.html')" class="year">Class of 2017</div>
+    <div onclick="go('associates.html')" class="year">Associates</div>
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
-  © 2026 Mount Olive Alumni Portal — All Rights Reserved <br>
-  Developed with ❤️ by Moses Monday MALITH <br>
-  Class Archives: 2013 • 2014 • 2015 • 2016 • 2017
+  © 2026 Mount Olive Alumni Portal <br>
+  Developed with ❤️ by Moses Monday MALITH
 </footer>
 
 <script>
-function go(page){
-  window.location.href = page;
-}
+function go(page){ window.location.href = page; }
 
-/* SLIDESHOW UPDATED */
 const images = [
   "images/school1.jpeg",
   "images/school2.jpeg",
