@@ -118,7 +118,9 @@ nav ul li a:hover {
   width: 80%;
   max-width: 850px;
   height: 380px;
-  object-fit: cover;
+  object-fit: contain;        /* ✅ shows full image */
+  object-position: center;    /* ✅ keeps face centered */
+  background: rgba(0,0,0,0.4); /* fills empty space nicely */
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
@@ -142,11 +144,11 @@ nav ul li a:hover {
 
 .gallery img {
   width: 100%;
-  height: 130px;
+  height: 150px;
   object-fit: cover;
+  object-position: 50% 20%; /* 🔥 focuses slightly upward (face area) */
   border-radius: 10px;
 }
-
 /* YEARS */
 .years {
   display: flex;
@@ -265,7 +267,7 @@ footer {
   <div class="teachers">
 
     <div class="teacher">
-      <img src="images/luap.jpeg">
+      <img src="images/owiny.jpeg">
       <h3>Tr. Paul</h3>
       <p>Mathematics, Music, Dance & Drama (MDD). Known for strict discipline and excellence in shaping performance and confidence.</p>
     </div>
@@ -313,6 +315,7 @@ footer {
   </div>
 </div>
 
+<!-- YEARS -->
 <div class="section">
   <h2>Explore Alumni Years</h2>
   <div class="years">
@@ -321,10 +324,7 @@ footer {
     <div onclick="go('2015.html')" class="year">Class of 2015</div>
     <div onclick="go('2016.html')" class="year">Class of 2016</div>
     <div onclick="go('2017.html')" class="year">Class of 2017</div>
-    <div onclick="go('2018.html')" class="year">Class of 2018</div>
-    <div onclick="go('2019.html')" class="year">Class of 2019</div>
     <div onclick="go('associates.html')" class="year">Associates</div>
-    <div onclick="go('executives.html')" class="year">Executives</div>
   </div>
 </div>
 <footer>
